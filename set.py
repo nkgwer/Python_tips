@@ -15,3 +15,12 @@ print(set(list_a) is set(list_b))
 
 for element in animals:
     print(element)
+
+animals.remove("kobuta")
+print(animals)
+
+animals.discard("saru")
+print(suc)
+#animals.remove("saru") #remove rises an error
+print(animals)
+
