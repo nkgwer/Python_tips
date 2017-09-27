@@ -20,7 +20,18 @@ animals.remove("kobuta")
 print(animals)
 
 animals.discard("saru")
-print(suc)
+
 #animals.remove("saru") #remove rises an error
 print(animals)
 
+setA = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+setB = {2, 4, 6, 8, 10}
+
+print(setA-setB)
+
+print({1, 2, 3} | {2, 3, 4})
+# or
+print({1, 2, 3} & {2, 3, 4})
+# and
+print({1, 3} <= {1, 2, 3})
+# subset
