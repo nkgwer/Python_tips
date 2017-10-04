@@ -1,6 +1,8 @@
-primes = [2]
 import matplotlib.pyplot as plt
-for i in range(3,10000):
+from tqdm import tqdm
+primes = [2]
+
+for i in tqdm(range(3,300000)):
     flag = True
     for prime in primes:
         if i%prime == 0:
@@ -9,7 +11,7 @@ for i in range(3,10000):
     if flag:
         primes.append(i)
 
-plt.hist(primes, bins=30)
+plt.hist(primes, bins=100)
 plt.show()
 
 
