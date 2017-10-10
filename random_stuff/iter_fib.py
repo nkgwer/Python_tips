@@ -17,10 +17,6 @@ class Fib:
     def __next__(self):
         if self._i >= self._end:
             raise StopIteration()
-        if self._i in self._fib_dic:
-            val = self._fib_dic[self._i]
-            self._i += 1
-            return val
         else:
             val = self._fib(self._i)
             self._i += 1
