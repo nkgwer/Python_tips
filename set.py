@@ -35,3 +35,5 @@ print({1, 2, 3} & {2, 3, 4})
 # and
 print({1, 3} <= {1, 2, 3})
 # subset
+print(setA.union(setB))
+print(setA.intersection(d setB))
