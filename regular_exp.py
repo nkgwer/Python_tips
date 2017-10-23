@@ -1,6 +1,6 @@
 import re
 pattern = r"PPAP"
-text = "PPAAPPAPAPPAPAPPAPPAPAPAPPPAPAPPAPAP"
+text = "PPAAPPAPAPPAPAPPAPPAPAPAPPPAPAPPAPPAP"
 matchOB = re.search(pattern , text)
 
 if matchOB:
@@ -8,4 +8,12 @@ if matchOB:
     print(matchOB.group())
     print(matchOB.start())
     print(matchOB.end())
-    print(matchOB.span())  
+    print(matchOB.span())
+
+
+pattern = r"yes"
+text = "oh, yeah yes! yes! yess!"
+
+matchedList = re.findall(pattern,text)
+if matchedList:
+    print(matchedList)
