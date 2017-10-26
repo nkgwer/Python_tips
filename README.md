@@ -1,2 +1,2 @@
 # Python_tips
-Tips for myself in Python3
+Tips with Python
